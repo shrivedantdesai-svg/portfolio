@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shrivedant Desai | Portfolio</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      line-height: 1.6;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    .container {
+      width: min(1100px, calc(100% - 2rem));
+      margin: 0 auto;
+    }
+
+    .hero {
+      padding: 5rem 0 4rem;
+      background: linear-gradient(135deg, #0f172a 0%, #1d4ed8 100%);
+      color: white;
+      text-align: center;
+    }
+
+    .hero .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 0.3em;
+      font-size: 0.85rem;
+      margin-bottom: 1rem;
+      opacity: 0.9;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.6rem, 4vw, 4.5rem);
+      margin: 0;
+    }
+
+    .hero .subtitle {
+      max-width: 680px;
+      margin: 1.25rem auto 2rem;
+      font-size: 1.1rem;
+      opacity: 0.95;
+    }
+
+    .cta-group {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.95rem 1.65rem;
+      border-radius: 999px;
+      background: #fff;
+      color: #1d4ed8;
+      text-decoration: none;
+      font-weight: 700;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .button:hover,
+    .button:focus-visible {
+      transform: translateY(-2px);
+      box-shadow: 0 18px 45px rgba(30, 64, 175, 0.18);
+    }
+
+    .button-secondary {
+      background: rgba(255,255,255,0.18);
+      color: white;
+      border: 1px solid rgba(255,255,255,0.28);
+    }
+
+    main {
+      padding: 3rem 0 4rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 24px;
+      padding: 2rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 20px 65px rgba(15, 23, 42, 0.08);
+    }
+
+    .card h2 {
+      margin-top: 0;
+      font-size: 1.7rem;
+      color: #0f172a;
+    }
+
+    .card p,
+    .card li {
+      color: #475569;
+    }
+
+    .two-column {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.5rem;
+    }
+
+    .skill-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 0.9rem;
+      margin-top: 1rem;
+    }
+
+    .skill {
+      background: #eff6ff;
+      border: 1px solid #dbeafe;
+      padding: 0.95rem 1rem;
+      border-radius: 14px;
+      font-weight: 600;
+      color: #1d4ed8;
+    }
+
+    .contact-card a {
+      color: #1d4ed8;
+      text-decoration: none;
+    }
+
+    .contact-card a:hover,
+    .contact-card a:focus-visible {
+      text-decoration: underline;
+    }
+
+    .project-card {
+      border-left: 4px solid #2563eb;
+      padding-left: 1rem;
+    }
+
+    .footer {
+      background: #0f172a;
+      color: #cbd5e1;
+      text-align: center;
+      padding: 1.5rem 0;
+    }
+
+    @media (max-width: 720px) {
+      .two-column {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding: 4rem 0 3rem;
+      }
+    }
++  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <p class="eyebrow">Hello, I am</p>
+      <h1>Shrivedant Desai</h1>
+      <p class="subtitle">Web Development Intern | Student | Responsive Website Design</p>
+      <div class="cta-group">
+        <a href="#contact" class="button">Contact Me</a>
+        <a href="#projects" class="button button-secondary">My Work</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="about" class="card">
+      <h2>About Me</h2>
+      <p>I am a passionate Diploma Computer Science student with a keen interest in web development and modern technologies. I enjoy creating clean, responsive, and user-friendly websites using HTML, CSS, Bootstrap, and JavaScript. I believe in continuous learning, solving real-world problems, and improving my skills through hands-on projects. My goal is to build innovative digital experiences while growing as a professional web developer.</p>
+    </section>
+
+    <section id="education" class="card two-column">
+      <div>
+        <h2>Education</h2>
+        <p><strong>Diploma in Computer Science</strong></p>
+        <p>Pimpri Chinchwad Polytechnic, Nigdi</p>
+        <p><strong>Expected Graduation:</strong> 2027</p>
+      </div>
+      <div>
+        <h2>Experience</h2>
+        <p><strong>Web Development Intern</strong></p>
+        <p>Elite Softwares</p>
+        <p>Currently pursuing an internship focused on web development.</p>
+      </div>
+    </section>
+
+    <section id="skills" class="card">
+      <h2>Skills</h2>
+      <div class="skill-grid">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">Bootstrap</div>
+        <div class="skill">C</div>
+        <div class="skill">C++</div>
+        <div class="skill">Python</div>
+        <div class="skill">Java</div>
+        <div class="skill">Problem Solving</div>
+        <div class="skill">Teamwork</div>
+      </div>
+    </section>
+
+    <section id="services" class="card">
+      <h2>Certificates</h2>
+      <ul>
+        
+<li>Infosys Springboard - C Programming</li>
+<li>Infosys Springboard - C++</li>
+<li>Infosys Springboard - Data Communication and Networks</li>
+<li>Infosys Springboard - Web Development</li>
+        <li>Responsive Website Design</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="card">
+      <h2>Project</h2>
+      <div class="project-card">
+        <h3>
+Designed and developed a responsive portfolio website using HTML, CSS, Bootstrap, and JavaScript to showcase my profile, skills, education, and contact details.
+</h3>
+        <p>A clean and responsive portfolio website that showcases personal details, skills, education, experience, and contact information.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="card contact-card">
+      <h2>Contact</h2>
+      <p>📧 <a href="mailto:shrivedantdesai@gmail.com">shrivedantdesai@gmail.com</a></p>
+      <p>📱 8530266796</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© 2026 Shrivedant Desai. Designed with HTML & CSS.</div>
+  </footer>
+</body>
+</html>
